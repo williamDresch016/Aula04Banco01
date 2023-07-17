@@ -74,6 +74,11 @@ namespace Aula04Banco01
 
             if (lblOperacao.Text == "SAQUE")
             {
+ 
+                  if (saldo < valor) 
+                  {
+                      return;
+                  }
                 soma = saldo - valor;
             }
             else
